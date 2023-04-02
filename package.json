@@ -15,9 +15,12 @@
   },
   "author": "M.Komiachko",
   "license": "ISC",
-  "type":"module",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/yokko2000/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/yokko2000/frontend-project-44#readme"
+  "homepage": "https://github.com/yokko2000/frontend-project-44#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
