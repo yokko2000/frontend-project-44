@@ -10,8 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/yokko2000/frontend-project-44.git"
   },
-  "author": "",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "author": "M.Komiachko",
   "license": "ISC",
+  "type":"module",
   "bugs": {
     "url": "https://github.com/yokko2000/frontend-project-44/issues"
   },
