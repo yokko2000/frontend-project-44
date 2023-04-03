@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { runGame } from '../src/cli.js';
 import { getRandomInt } from '../src/utils.js';
+
 const gameDescription = 'What number is missing in the progression?';
 const getQuestionAndAnswer = () => {
   const progressionLength = Math.floor(Math.random() * 6) + 5;
@@ -22,4 +23,4 @@ const getQuestionAndAnswer = () => {
     correctAnswer: correctAnswer.toString(),
   };
 };
-  runGame(getQuestionAndAnswer, gameDescription);
+runGame(getQuestionAndAnswer, gameDescription);

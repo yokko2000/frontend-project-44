@@ -32,4 +32,4 @@ const getQuestionAndAnswer = () => {
   return { question, correctAnswer };
 };
 
-  runGame(getQuestionAndAnswer, gameDescription);
+runGame(getQuestionAndAnswer, gameDescription);
