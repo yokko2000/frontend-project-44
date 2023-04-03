@@ -1,5 +1,5 @@
 export default function getRandomInt(min, max) {
-  RandomMin = Math.ceil(min);
-  RandomMax = Math.floor(max);
-  return Math.floor(Math.random() * (RandomMax - RandomMin + 1)) + RandomMin;
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
