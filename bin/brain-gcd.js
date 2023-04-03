@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { runGame } from '../src/cli.js';
 import { getRandomInt } from '../src/utils.js';
+
 function calculateGcd(a, b) {
   if (!b) {
     return a;

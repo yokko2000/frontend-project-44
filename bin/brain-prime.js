@@ -17,7 +17,7 @@ function isPrime(number) {
 }
 // функция генерации вопроса и ответа
 function getQuestionAndAnswer() {
-  const number = getRandomInt(1,100);
+  const number = getRandomInt(1, 100);
   const question = String(number);
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
   return { question, correctAnswer };

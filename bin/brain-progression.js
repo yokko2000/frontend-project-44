@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 import { runGame } from '../src/cli.js';
-import { getRandomInt } from '../src/utils.js';
 
 const gameDescription = 'What number is missing in the progression?';
 const getQuestionAndAnswer = () => {

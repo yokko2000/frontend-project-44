@@ -25,6 +25,5 @@ export function runGame(getQuestionAndAnswer, gameDescription) {
       return;
     }
   }
-  console.log(`Congratulations, ${name}!`)
-  
-};
+  console.log(`Congratulations, ${name}!`);
+}
