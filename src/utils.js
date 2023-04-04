@@ -1,3 +1,4 @@
+let min, max;
 export default function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);

@@ -1,6 +1,9 @@
 #!/usr/bin/env node
-import { runGame } from '../cli.js';
-import  getRandomInt  from '../utils.js';
+
+import {
+  runGame
+} from '../cli.js';
+import getRandomInt from '../utils.js';
 
 const gameDescription = 'What is the result of the expression?';
 
@@ -29,8 +32,12 @@ const getQuestionAndAnswer = () => {
       break;
   }
 
-  return { question, correctAnswer };
+  return {
+    question,
+    correctAnswer
+  };
 };
+
 export default function brainCalc() {
-runGame(getQuestionAndAnswer, gameDescription);
+  runGame(getQuestionAndAnswer, gameDescription);
 }
