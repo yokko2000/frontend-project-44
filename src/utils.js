@@ -1,6 +1,5 @@
-let min, max;
 export default function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  let newMin = Math.ceil(min);
+  let newMmax = Math.floor(max);
+  return Math.floor(Math.random() * (newMmax - newMin + 1)) + newMin;
 }

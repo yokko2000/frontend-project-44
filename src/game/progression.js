@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 
-import {
-  runGame
-} from '../cli.js';
+import { runGame } from '../cli.js';
 
 const gameDescription = 'What number is missing in the progression?';
 const getQuestionAndAnswer = () => {
@@ -20,10 +18,7 @@ const getQuestionAndAnswer = () => {
     }
   }
   const correctAnswer = firstNumber + hiddenIndex * step;
-  return {
-    question: progression.join(' '),
-    correctAnswer: correctAnswer.toString(),
-  };
+  return { question: progression.join(' '), correctAnswer: correctAnswer.toString() };
 }
 
 export default function brainProgression() {
