@@ -2,7 +2,9 @@
 
 import { runGame } from '../cli.js';
 
+//  здесь храниться описание игры
 const gameDescription = 'What number is missing in the progression?';
+// функция генерации вопроса и ответа
 const getQuestionAndAnswer = () => {
   const progressionLength = Math.floor(Math.random() * 6) + 5;
   const firstNumber = Math.floor(Math.random() * 100);
@@ -18,9 +20,11 @@ const getQuestionAndAnswer = () => {
     }
   }
   const correctAnswer = firstNumber + hiddenIndex * step;
+//  Возвращаем вопрос и правильный ответ
   return { question: progression.join(' '), correctAnswer: correctAnswer.toString() };
 };
 
+//  Собираем и экспортируем наш код игры
 export default function brainProgression() {
   runGame(getQuestionAndAnswer, gameDescription);
 }

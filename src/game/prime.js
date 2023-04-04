@@ -3,6 +3,7 @@
 import { runGame } from '../cli.js';
 import getRandomInt from '../utils.js';
 
+//  здесь храниться описание игры
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 // функция проверяет простое ли число
 function isPrime(number) {
@@ -21,9 +22,11 @@ function getQuestionAndAnswer() {
   const number = getRandomInt(1, 100);
   const question = String(number);
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
+//  Возвращаем вопрос и правильный ответ
   return { question, correctAnswer };
 }
 
+//  Собираем и экспортируем наш код игры
 export default function brainPrime() {
   runGame(getQuestionAndAnswer, gameDescription);
 }
