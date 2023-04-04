@@ -1,5 +1,5 @@
 export default function getRandomInt(min, max) {
-  let newMin = Math.ceil(min);
-  let newMmax = Math.floor(max);
+  const newMin = Math.ceil(min);
+  const newMmax = Math.floor(max);
   return Math.floor(Math.random() * (newMmax - newMin + 1)) + newMin;
 }

@@ -19,7 +19,7 @@ const getQuestionAndAnswer = () => {
   }
   const correctAnswer = firstNumber + hiddenIndex * step;
   return { question: progression.join(' '), correctAnswer: correctAnswer.toString() };
-}
+};
 
 export default function brainProgression() {
   runGame(getQuestionAndAnswer, gameDescription);
