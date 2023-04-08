@@ -14,7 +14,6 @@ const getQuestionAndAnswer = () => {
 
   let question;
   let correctAnswer;
-//  создадим вопрос и правильный ответ на него В зависимости от выбранного оператора
   switch (operator) {
     case '+':
       question = `${a} + ${b}`;
