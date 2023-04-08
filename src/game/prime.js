@@ -22,7 +22,6 @@ function getQuestionAndAnswer() {
   const number = getRandomInt(1, 100);
   const question = String(number);
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
-//  Возвращаем вопрос и правильный ответ
   return { question, correctAnswer };
 }
 

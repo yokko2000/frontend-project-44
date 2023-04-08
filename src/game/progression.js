@@ -20,7 +20,6 @@ const getQuestionAndAnswer = () => {
     }
   }
   const correctAnswer = firstNumber + hiddenIndex * step;
-//  Возвращаем вопрос и правильный ответ
   return { question: progression.join(' '), correctAnswer: correctAnswer.toString() };
 };
 

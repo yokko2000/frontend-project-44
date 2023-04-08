@@ -31,7 +31,6 @@ const getQuestionAndAnswer = () => {
     default:
       break;
   }
-//  Возвращаем вопрос и правильный ответ
   return { question, correctAnswer };
 };
 
