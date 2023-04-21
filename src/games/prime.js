@@ -1,11 +1,9 @@
 #!/usr/bin/env node
 
-import { runGame } from '../cli.js';
+import { runGame } from '../index.js';
 import getRandomInt from '../utils.js';
 
-//  здесь храниться описание игры
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-// функция проверяет простое ли число
 function isPrime(number) {
   if (number < 2) {
     return false;
@@ -17,7 +15,6 @@ function isPrime(number) {
   }
   return true;
 }
-// функция генерации вопроса и ответа
 function getQuestionAndAnswer() {
   const number = getRandomInt(1, 100);
   const question = String(number);
@@ -25,7 +22,6 @@ function getQuestionAndAnswer() {
   return { question, correctAnswer };
 }
 
-//  Собираем и экспортируем наш код игры
-export default function brainPrime() {
+export default function startBrainPrimeGame() {
   runGame(getQuestionAndAnswer, gameDescription);
 }
