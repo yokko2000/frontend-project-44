@@ -1,9 +1,9 @@
 import readlineSync from 'readline-sync';
-import * as welcomeUser from './cli.js';
+import welcomeUser from './cli.js';
 
 const ROUNDS_COUNT = 3;
 export default function runGame(getQuestionAndAnswer, gameDescription) {
-  const { name } = welcomeUser.welcomeUser().name;
+  const { name } = welcomeUser();
   console.log(gameDescription);
   for (let i = 0; i < ROUNDS_COUNT; i += 1) {
     const { question, correctAnswer } = getQuestionAndAnswer();
