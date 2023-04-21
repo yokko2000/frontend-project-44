@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { runGame } from '../index.js';
+import runGame from '../index.js';
 import getRandomInt from '../utils.js';
 
 function calculateGcd(a, b) {

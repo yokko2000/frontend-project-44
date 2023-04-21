@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { runGame } from '../index.js';
+import runGame from '../index.js';
 
 const gameDescription = 'What number is missing in the progression?';
 const getQuestionAndAnswer = () => {
